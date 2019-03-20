@@ -1,0 +1,19 @@
+.login-form label {
+  margin: 0 auto;
+  width: 10%;
+  display: block;
+  text-align: center;
+  align-content: center;
+}
+
+.loginbutton {
+  margin: 0 auto;
+  width: auto;
+  display: block;
+  text-align: center;
+  align-content: center;
+}
+
+.login {
+  font-size: 5 px;
+}
