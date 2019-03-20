@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react'
 import { getUsers } from '../../actions/users'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-// import './LocationsListContainer.css'
+import './LocationsListContainer.css'
 // import LocationsList from './LocationsList'
 
 class LocationsListContainer extends PureComponent {
