@@ -9,7 +9,7 @@ import './LocationsListContainer.css'
 class LocationsListContainer extends PureComponent {
   componentWillMount() {
     if (this.props.authenticated) {
-      // if (this.props.events === null) this.props.getEvents()
+      // if (this.props.locations === null) this.props.getLocations()
       if (this.props.users === null) this.props.getUsers()
     }
   }
@@ -24,7 +24,10 @@ class LocationsListContainer extends PureComponent {
       <div>
         <h1>Locations available:</h1>
         <div className="eventslist">
-          {/* <LocationsList locations={this.props.locations} homes={this.props.homes} /> */}
+          <LocationsList 
+                // locations={this.props.locations} 
+                // homes={this.props.homes} 
+                />
         </div>
       </div>
     )
@@ -34,8 +37,8 @@ class LocationsListContainer extends PureComponent {
 const mapStateToProps = state => ({
   authenticated: state.currentUser !== null,
   users: state.users === null ? null : state.users,
-  locations: state.locations,
-  homes: state.homes
+  // locations: state.locations,
+  // homes: state.homes
 })
 
 export default connect(mapStateToProps
