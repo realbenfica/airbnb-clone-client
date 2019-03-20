@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path="/locations/:id" component={HomesListContainer} />
             <Route exact path="/homes/" component={HomesFormContainer} />
             <Route exact path="/homedetails/:id" component={HomeDetails} /> */}
-            {/* <Route exact path="/" render={() => <Redirect to="/locations" />} /> */}
+            <Route exact path="/" render={() => <Redirect to="/" />} />
           </main>
         </div>
       </Router>
