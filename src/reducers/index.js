@@ -8,8 +8,8 @@ import locations from './locations'
 import location from './location'
 import home from './home'
 import homes from './homes'
-// import comments from './comments'
-// import comment from './comment'
+import comments from './comments'
+import comment from './comment'
 
 export default {
   users,
@@ -21,6 +21,6 @@ export default {
   locations,
   home,
   homes,
-  // comment,
-  // comments
+  comment,
+  comments
 }

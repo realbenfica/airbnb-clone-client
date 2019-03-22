@@ -26,7 +26,7 @@ class LocationsListContainer extends PureComponent {
         <div className="eventslist">
           <LocationsList 
                 locations={this.props.locations} 
-                // homes={this.props.homes} 
+                homes={this.props.homes} 
                 />
         </div>
       </div>
@@ -38,7 +38,7 @@ const mapStateToProps = state => ({
   authenticated: state.currentUser !== null,
   users: state.users === null ? null : state.users,
   locations: state.locations,
-  // homes: state.homes
+  homes: state.homes
 })
 
 export default connect(mapStateToProps, { getLocations, getUsers })(LocationsListContainer)
