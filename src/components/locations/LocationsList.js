@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import './LocationsList.css'
 
 export default function LocationsList(props) {
-
-    console.log(props)
     return (
         <div className="responsive">
             <ul>
