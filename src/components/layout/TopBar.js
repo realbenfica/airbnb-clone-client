@@ -15,7 +15,7 @@ const TopBar = (props) => {
     <AppBar position="absolute" style={{ zIndex: 10 }}>
       <Toolbar>
         <Typography variant="title" color="inherit" style={{ flex: 1 }}>
-          airbnb clone
+          Airbnb-clone
         </Typography>
         {
           user &&
@@ -31,7 +31,7 @@ const TopBar = (props) => {
           <Button color="inherit" onClick={() => history.push('/signup')}>Sign up</Button>
         }
         {
-          location.pathname.indexOf('locations/') > 0 &&
+          location.pathname.indexOf('locations') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
         }
         {
@@ -43,7 +43,7 @@ const TopBar = (props) => {
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
         }
         {
-          /events$/.test(location.pathname) &&
+          /locations$/.test(location.pathname) &&
           <Button color="inherit" onClick={() => history.push('/logout')}>Log out</Button>
         }
       </Toolbar>

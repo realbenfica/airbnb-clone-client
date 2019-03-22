@@ -1,0 +1,19 @@
+h2 {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.eventslist {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 auto;
+  width: 45%;
+  text-align: center;
+  align-content: center;
+  font-size: 30px;
+  padding: 45px;
+}
