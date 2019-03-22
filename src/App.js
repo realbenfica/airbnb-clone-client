@@ -6,7 +6,7 @@ import LogoutPage from './components/logout/LogoutPage'
 import './App.css'
 import TopBar from './components/layout/TopBar'
 import LocationsListContainer from './components/locations/LocationsListContainer'
-// import HomesListContainer from './components/homes/HomesListContainer'
+import HomesListContainer from './components/homes/HomesListContainer'
 // import HomesFormContainer from './components/homes/HomesFormContainer'
 // import HomeDetails from './components/homes/HomeDetails'
 
@@ -24,9 +24,9 @@ class App extends Component {
             <Route exact path="/logout" component={LogoutPage} />
             <Route exact path="/signup" component={SignupPage} />
             <Route exact path="/locations" component={LocationsListContainer} />
-            {/* <Route exact path="/locations/:id" component={HomesListContainer} />
-            <Route exact path="/homes/" component={HomesFormContainer} />
-            <Route exact path="/homedetails/:id" component={HomeDetails} /> */}
+            <Route exact path="/locations/:id" component={HomesListContainer} />
+            {/* <Route exact path="/homes/" component={HomesFormContainer} /> */}
+            {/* <Route exact path="/homedetails/:id" component={HomeDetails} /> */}
             <Route exact path="/" render={() => <Redirect to="/locations" />} />
           </main>
         </div>
