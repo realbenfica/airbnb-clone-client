@@ -14,9 +14,6 @@ export default function LocationsList(props) {
                         <Link to={`/locations/${location.id}`}>
                             {location.name}
                         </Link>
-                        {" - '" + location.description + "'"}
-                        <br></br>
-                        {"date: " + location.date}
                         <p></p>
                     </li>
                 ))}
