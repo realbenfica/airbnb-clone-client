@@ -50,8 +50,8 @@ export const addComment = comment => (dispatch, getState) => {
     .set("Authorization", `Bearer ${jwt}`)
     .send({
       comment: comment.comment,
-      tickets: state.ticket,
-      ticketId: comment.ticketId
+      homes: state.home,
+      homeId: comment.homeId
     })
     .then(response => {
       dispatch({

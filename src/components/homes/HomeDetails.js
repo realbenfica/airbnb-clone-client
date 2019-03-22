@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-// import CommentForm from "../comments/CommentForm"
+import CommentForm from "../comments/CommentForm"
 import { addComment, fetchAllComments } from '../../actions/comments'
 // import { getUserStats } from '../../actions/users'
 import CommentsDisplay from '../comments/CommentsDisplay'
@@ -26,7 +26,7 @@ class HomeDetails extends PureComponent {
                 <img key={this.props.home && this.props.home.picture} className="img-responsive" src={this.props.home && this.props.home.picture} alt="logo" />
                 </p>
                 <CommentsDisplay data={this.props} />
-                {/* <CommentForm onSubmit={this.addComment} /> */}
+                <CommentForm onSubmit={this.addComment} />
             </div>
         )
     }
