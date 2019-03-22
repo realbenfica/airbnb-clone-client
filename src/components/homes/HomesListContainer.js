@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import './HomesListContainer.css'
 import { Link } from 'react-router-dom'
-// import HomesFormContainer from './HomesFormContainer'
+import HomesFormContainer from './HomesFormContainer'
 
 
 class HomesListContainer extends PureComponent {
@@ -45,7 +45,7 @@ class HomesListContainer extends PureComponent {
             ))}
           <br />
           <br />
-          {/* <HomesFormContainer params={this.props.match.params.id}/> */}
+          <HomesFormContainer params={this.props.match.params.id}/>
         </div>
       </div>
     )
