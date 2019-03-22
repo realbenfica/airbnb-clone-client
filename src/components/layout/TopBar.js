@@ -30,20 +30,20 @@ const TopBar = (props) => {
           location.pathname.indexOf('login') > 0 &&
           <Button color="inherit" onClick={() => history.push('/signup')}>Sign up</Button>
         }
-        {
-          location.pathname.indexOf('locations/') > 0 &&
+        {/* {
+          location.pathname.indexOf('locations') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
-        }
-        {
+        } */}
+        {/* {
           location.pathname.indexOf('homes/') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
         }
         {
           location.pathname.indexOf('homedetails/') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
-        }
+        } */}
         {
-          /events$/.test(location.pathname) &&
+          /locations$/.test(location.pathname) &&
           <Button color="inherit" onClick={() => history.push('/logout')}>Log out</Button>
         }
       </Toolbar>
