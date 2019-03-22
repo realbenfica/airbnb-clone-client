@@ -1,0 +1,10 @@
+.responsive {
+   font-size: 16 px
+}
+
+.img-responsive {
+    
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
