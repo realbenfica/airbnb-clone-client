@@ -8,18 +8,8 @@ export default function LocationForm(props) {
     </label>
     <br></br>
     <label>
-      Description:
-      <input type="text" name="description" onChange={props.onChange} value={props.values.description} />
-    </label>
-    <br></br>
-    <label>
       Picture:
       <input type="text" name="picture" onChange={props.onChange} value={props.values.picture} />
-    </label>
-    <br></br>
-    <label>
-      Date:
-      <input type="text" name="date" onChange={props.onChange} value={props.values.date} />
     </label>
     <br></br>
     <button type="submit">Save</button>
