@@ -34,14 +34,14 @@ const TopBar = (props) => {
           location.pathname.indexOf('locations') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
         }
-        {/* {
+        {
           location.pathname.indexOf('homes/') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
         }
         {
           location.pathname.indexOf('homedetails/') > 0 &&
           <Button color="inherit" onClick={() => history.push('/locations')}>All locations</Button>
-        } */}
+        }
         {
           /locations$/.test(location.pathname) &&
           <Button color="inherit" onClick={() => history.push('/logout')}>Log out</Button>
