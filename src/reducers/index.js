@@ -6,8 +6,8 @@ import signup from './signup'
 
 import locations from './locations'
 import location from './location'
-// import home from './home'
-// import homes from './homes'
+import home from './home'
+import homes from './homes'
 // import comments from './comments'
 // import comment from './comment'
 
@@ -19,8 +19,8 @@ export default {
 
   location,
   locations,
-  // home,
-  // homes,
+  home,
+  homes,
   // comment,
   // comments
 }

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-// import { getlocations } from '../../actions/locations'
+import { getLocations } from '../../actions/locations'
 import { getUsers } from '../../actions/users'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
