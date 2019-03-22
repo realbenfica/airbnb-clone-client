@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-// import { getHomes, getHome } from '../../actions/homes'
+import { getHomes, getHome } from '../../actions/homes'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import './HomesListContainer.css'
@@ -20,7 +20,7 @@ class HomesListContainer extends PureComponent {
     if (!this.props.authenticated) return (
       <Redirect to="/login" />
     )
-
+    
     return (
       <div>
         <h1>Homes at this location:</h1>
@@ -45,7 +45,7 @@ class HomesListContainer extends PureComponent {
             ))}
           <br />
           <br />
-          <HomesFormContainer params={this.props.match.params.id}/>
+          {/* <HomesFormContainer params={this.props.match.params.id}/> */}
         </div>
       </div>
     )
