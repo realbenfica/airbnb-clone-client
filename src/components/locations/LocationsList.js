@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import LocationFormContainer from './LocationFormContainer'
+import LocationFormContainer from './LocationFormContainer'
 import './LocationsList.css'
 
 export default function LocationsList(props) {
@@ -22,7 +22,7 @@ export default function LocationsList(props) {
                 ))}
             </ul>
             <h2>Add a location:</h2>
-            {/* <LocationFormContainer /> */}
+            <LocationFormContainer />
         </div>
     )
 }
