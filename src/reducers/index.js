@@ -4,8 +4,8 @@ import login from './login'
 import currentUser from './currentUser'
 import signup from './signup'
 
-// import locations from './locations'
-// import location from './location'
+import locations from './locations'
+import location from './location'
 // import home from './home'
 // import homes from './homes'
 // import comments from './comments'
@@ -17,8 +17,8 @@ export default {
   currentUser,
   signup,
 
-  // location,
-  // locations,
+  location,
+  locations,
   // home,
   // homes,
   // comment,
