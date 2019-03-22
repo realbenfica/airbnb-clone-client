@@ -17,11 +17,11 @@ class CommentForm extends PureComponent {
         this.props.onSubmit(this.state)
     }
 
-    handleChange = event => {
-        const { name, value } = event.target
+    handleChange = location => {
+        const { name, value } = location.target
         this.setState({
             [name]: value,
-            ticketId: this.props.state.ticket.id
+            homeId: this.props.state.home.id
         })
     }
 
@@ -50,11 +50,11 @@ class CommentForm extends PureComponent {
 const mapStateToProps = state => {
     return {
         state: state,
-        event: state.event,
+        location: state.location,
         authenticated: state.currentUser !== null,
-        tickets: state.tickets,
-        ticket: state.ticket,
-        events: state.events
+        homes: state.homes,
+        home: state.home,
+        locations: state.locations
     }
 }
 

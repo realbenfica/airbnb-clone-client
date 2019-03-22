@@ -18,7 +18,7 @@ class CommentsDisplay extends PureComponent {
                 <ul>
                     <li>
                         {this.props.comments && this.props.comments
-                            .filter((comment) => (this.props.data.match.params.id == comment.ticketId) ? comment : null)
+                            .filter((comment) => (this.props.data.match.params.id == comment.homeId) ? comment : null)
                             .map(comment => (
                                 <ul key={comment.id}>
                                     <li><strong>Users Email</strong></li>

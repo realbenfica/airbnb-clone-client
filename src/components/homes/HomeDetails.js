@@ -1,23 +1,21 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 // import CommentForm from "../comments/CommentForm"
-// import { addComment, fetchAllComments } from '../../actions/comments'
+import { addComment, fetchAllComments } from '../../actions/comments'
 // import { getUserStats } from '../../actions/users'
-
-// import CommentsDisplay from '../comments/CommentsDisplay'
+import CommentsDisplay from '../comments/CommentsDisplay'
 
 class HomeDetails extends PureComponent {
     componentWillMount() {
-        // this.props.fetchAllComments()
+        this.props.fetchAllComments()
         // this.props.getUserStats()
     }
 
-    // addComment = comment => {
-    //     this.props.addComment(comment)
-    // }
+    addComment = comment => {
+        this.props.addComment(comment)
+    }
 
     render() {
-
         return (
             <div>
                 <h1>Home details:</h1>
@@ -27,8 +25,8 @@ class HomeDetails extends PureComponent {
                 <p>Picture:
                 <img key={this.props.home && this.props.home.picture} className="img-responsive" src={this.props.home && this.props.home.picture} alt="logo" />
                 </p>
-                {/* <CommentsDisplay data={this.props} />
-                <CommentForm onSubmit={this.addComment} /> */}
+                <CommentsDisplay data={this.props} />
+                {/* <CommentForm onSubmit={this.addComment} /> */}
             </div>
         )
     }
@@ -39,11 +37,10 @@ const mapStateToProps = state => {
         home: state.home,
         users: state.users,
         homes: state.homes,
-        // comments: state.comments
+        comments: state.comments
     }
 }
 
-export default connect(mapStateToProps, { 
-    // addComment, fetchAllComments, 
-    // getUserStats 
+export default connect(mapStateToProps, { addComment, fetchAllComments
+    // , getUserStats 
 })(HomeDetails)
