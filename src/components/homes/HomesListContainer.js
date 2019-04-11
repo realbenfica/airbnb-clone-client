@@ -26,6 +26,7 @@ class HomesListContainer extends PureComponent {
         <h1>Homes at this location:</h1>
         <div className="homeslist">
           {this.props.homes && this.props.homes
+            // eslint-disable-next-line
             .filter((home) => (this.props.match.params.id == home.locationId) ? home : null)
             .map(home => (
               <ul key={home.id}>

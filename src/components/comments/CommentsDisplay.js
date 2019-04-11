@@ -18,11 +18,11 @@ class CommentsDisplay extends PureComponent {
                 <ul>
                     <li>
                         {this.props.comments && this.props.comments
+                            // eslint-disable-next-line
                             .filter((comment) => (this.props.data.match.params.id == comment.homeId) ? comment : null)
                             .map(comment => (
                                 <ul key={comment.id}>
                                     <li><strong>Users Email</strong></li>
-                                    {/* <li>{comment.users.email}</li> */}
                                     <br></br>
                                     <li><strong>Comment:</strong></li>
                                     <li>{comment.comment}</li>
