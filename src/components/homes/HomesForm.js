@@ -18,11 +18,10 @@ class HomesForm extends PureComponent {
   }
 
   handleChange = location => {
-    console.log(this.props)
     const { name, value } = location.target
     this.setState({
       [name]: value,
-      // locationId: this.props.id
+      locationId: this.props.id
     })
   }
 
