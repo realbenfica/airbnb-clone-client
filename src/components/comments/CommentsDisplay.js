@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { fetchAllComments, fetchComment } from '../../actions/comments'
+import './CommentsDisplay.css'
 
 class CommentsDisplay extends PureComponent {
     componentWillMount() {
@@ -22,10 +23,9 @@ class CommentsDisplay extends PureComponent {
                             .filter((comment) => (this.props.data.match.params.id == comment.homeId) ? comment : null)
                             .map(comment => (
                                 <ul key={comment.id}>
-                                    <li><strong>Users Email</strong></li>
-                                    <br></br>
                                     <li><strong>Comment:</strong></li>
                                     <li>{comment.comment}</li>
+                                    <br></br>
                                 </ul>
                             ))
                         }

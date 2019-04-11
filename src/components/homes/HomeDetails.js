@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import CommentForm from "../comments/CommentForm"
 import { addComment, fetchAllComments } from '../../actions/comments'
-// import { getUserStats } from '../../actions/users'
+import './HomeDetails.css'
 import CommentsDisplay from '../comments/CommentsDisplay'
 
 class HomeDetails extends PureComponent {
@@ -17,10 +17,10 @@ class HomeDetails extends PureComponent {
 
     render() {
         return (
-            <div>
+            <div className="homedetails">
                 <h1>Home details:</h1>
 
-                <p>Price: {this.props.home && this.props.home.price}</p>
+                <p>Price: €{this.props.home && this.props.home.price},00</p>
                 <p>Description: {this.props.home && this.props.home.description}</p>
                 <p>Picture:
                 <img key={this.props.home && this.props.home.picture} className="img-responsive" src={this.props.home && this.props.home.picture} alt="logo" />
